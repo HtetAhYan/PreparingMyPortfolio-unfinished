@@ -1,0 +1,93 @@
+.About {
+  background: #0e1129;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 200vh;
+  box-sizing: border-box;
+}
+.About .About_grid {
+  display: flex;
+  margin: 1rem 7rem;
+}
+
+.load {
+  font-size: 5rem;
+  position: absolute;
+}
+
+.About_spline {
+  cursor: pointer;
+  position: absolute;
+  top: 19rem;
+  right: 5rem;
+  transform: scale(0.9);
+}
+
+.About_texts {
+  cursor: pointer;
+  position: absolute;
+  width: 35rem;
+  top: 6rem;
+  border-radius: 1rem;
+  left: 10rem;
+  background-color: rgba(8, 8, 8, 0.204);
+  padding: 1rem;
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
+}
+.About_texts h1 {
+  color: bisque;
+}
+.About_texts h1::first-letter {
+  font-size: 3rem;
+  color: rgb(0, 229, 255);
+}
+.About_texts h3 {
+  color: rgba(255, 255, 255, 0.71);
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 1080px) {
+  h1 {
+    font-size: 1rem;
+  }
+  h1::first-letter {
+    font-size: 1.5rem;
+  }
+  h3 {
+    line-height: 0.5rem;
+  }
+  .About_spline {
+    transform: scale(0.7);
+    position: absolute;
+    right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .About_texts {
+    transform: scale(0.8) translateX(-100px);
+    right: 9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .About_texts {
+    transform: scale(0.9);
+    width: 20rem;
+    right: 0rem;
+    left: 0;
+  }
+  .About_texts h3 {
+    line-height: 1rem;
+    font-size: 0.9rem;
+  }
+  .About_texts h1 {
+    font-size: 1rem;
+  }
+  .About_spline {
+    transform: scale(0.6);
+    left: -9rem;
+    bottom: 5rem;
+  }
+}/*# sourceMappingURL=About.css.map */

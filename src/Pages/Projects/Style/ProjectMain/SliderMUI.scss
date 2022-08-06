@@ -1,0 +1,104 @@
+.MusicIcons{
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-top: 0.9rem;
+    cursor: pointer;
+    
+}
+.Music{
+    position: fixed;
+    z-index: 2;
+    top: -2rem;
+}
+.play, .pause{
+    display: none;
+   
+}
+.MusicControl{
+    display: flex;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    left: 2.5rem;
+    top: 32rem;
+    position: absolute;
+    height: 5rem;
+    width: 15rem;
+    backdrop-filter: blur(0.2rem);
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    background-color: rgba(34, 31, 31, 0.097);
+    z-index: 1  ;
+   
+.MusicSlider{
+    width: 90%;
+    height: 4px;
+    position: absolute;
+    border-radius:0.8rem;
+    background-color: rgba(147, 147, 147, 0.915);
+    .Stream{
+        cursor: pointer;
+        height: 100%;
+        border-radius: 1rem;
+        background-color: rgb(255, 52, 140);
+    }
+}
+}
+.MusicTitle{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.766);
+    width: 20rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.122);
+    backdrop-filter: blur(1rem);
+    position:absolute;
+    height: 4rem;
+  border-top-left-radius: 0.8rem;
+ top: 27rem;
+  border-top-right-radius: 0.8rem;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+
+@media screen and (max-width:500px){
+    .MusicTitle{
+        top: 7rem;
+        font-size: 0.44rem;
+        width: 10rem;
+        height: 2rem;
+        left: 0.5rem;
+    }
+    .MusicControl{
+        border-radius: 0.4rem;
+        height: 4rem;
+        top: 8.5rem;
+        width: 10rem;
+        left: 0.5rem;
+        .MusicIcons{
+            font-size: 1.4rem;
+        }
+    }
+}
+@media screen and (max-width:900px){
+    .Music{
+        position: absolute;
+        top: 0rem;
+     }
+}
+@media screen and (min-width:1920px){
+    .MusicTitle{
+        top: 40rem;
+    }
+    .MusicControl{
+        top: 46rem;
+    }
+}
+@media screen and (max-width:1920px){
+    .MusicTitle{
+        top: 29rem;
+    }
+    .MusicControl{
+        top: 33rem;
+    }
+}

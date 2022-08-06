@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+html,body{
+    overflow-x: hidden;
+
+}
+body{
+    position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cookie&display=swap');
+.A_Home_Page{
+    background: url(../public/image/jpg-1.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    
+   height: 100%;
+}
+.A_Home_Page_Main{
+  
+    overflow: hidden;
+    height: 100vh;
+}
+.bottom{
+    width: 100%;
+    background-color: rgba(204, 181, 181, 0);
+ position: absolute;
+
+    
+  bottom: 1rem;
+   
+}
+.bottom_icons .i{
+  cursor: pointer;
+}
+.box{
+    position: absolute;
+    width: 68rem; 
+    left: 10vh;
+    top: 7rem;
+
+    display: flex;
+}
+
+.bottom_icons .bottom_i{
+     cursor: pointer;
+}
+
+.box_stick{
+    
+    width: 0.5rem;
+    margin-top: 0.2rem;
+    height: 6.8rem;
+    background-color: rgb(228, 49, 49);
+}
+.box_head{
+    margin-left: 1.5rem;
+
+    
+}
+.box_head h2{
+    color: #46dd9e;
+}
+.box_head h1{
+    font-size: 4rem;
+    margin-top: 0.2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+  display: flex; 
+    color: #d8cfcf;
+    font-family: 'Anton', sans-serif;
+    
+}
+
+.caller{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+
+    border: solid 1px #ffffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.phone::before{
+content: '';
+position: absolute;
+ background-color: #ffffff;
+ width: 5px;
+ border-radius: 50%;
+ margin-left: -3rem;
+ height: 5px;
+
+}
+@media (max-width:800px) {
+    .A_Home_Page{
+   
+        background-size:cover;
+        background-position: top;
+        width: 100vw;
+     
+    }
+    .A_Home_Page_Main{
+        overflow: none;
+         overflow: hidden;
+     height: 100vh;
+    }
+    .box{
+        top: 7rem;
+    left: 1rem;
+    
+    }
+    .box_head{
+        margin-left: 1rem;
+    }
+    .box_head h2{
+         font-size: 1.2rem;
+    }
+    .box_head h1{
+        font-size: 1.8rem;
+    }
+    .box_stick{
+        height: 4rem;
+        width: 0.3rem;
+    }
+    .bottom{
+     margin-top: 0;
+
+    }
+    .bottom_icons{
+        
+    }
+   .bottom_icons .i{
+        font-size: 2.5rem;
+        margin-left: -1rem;
+    }
+
+ 
+    .caller{
+        width: 2.5rem;
+        margin-left: -1rem;
+        height: 2.5rem;
+    }
+    .box_button_stack{
+      margin-top:2rem;
+    }
+    .box_button_stack .btn{
+        margin-top: 1rem;
+        width: 100px;
+        height: 40px;
+        font-size: 0.6rem;
+        font-weight: 600;
+        color: #000000b1;
+    }
+   
+}
+.App{
+    overflow: hidden;
+    background:black;
+}
+@media (max-width:500px){
+    .box{
+        top: 10rem;
+    }
+   .A_Home_Page .bottom{
+        margin-top: 1rem;
+       
+    }
+    .A_Home_Page{
+        background-position: left;
+    }
+}

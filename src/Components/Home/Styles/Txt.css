@@ -1,0 +1,23 @@
+.TxtH {
+  position: relative;
+  top: 2rem;
+  left: 0;
+}
+.TxtH p {
+  color: #ffffff;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-family: Monospace;
+}
+
+@media (max-width: 600px) {
+  .TxtH {
+    top: 2rem;
+  }
+  .TxtH p {
+    font-size: 0.9rem;
+    letter-spacing: -1px;
+    color: #ffffff;
+    font-family: monospace;
+  }
+}/*# sourceMappingURL=Txt.css.map */
