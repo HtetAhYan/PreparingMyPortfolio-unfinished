@@ -1,22 +1,21 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Styles/Slider.css";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function SideSlider() {
-
   const [isActive, setIsActive] = useState(false);
 
   const texts = [
     { id: 1, text: "Home" },
     { id: 2, text: "Projects" },
     { id: 3, text: "About" },
-    { id: 4, text: "Services" },
+    { id: 4, text: "Blog" },
     { id: 5, text: "Contact" },
   ];
   let Nav = useNavigate();
   return (
-    <div className="Slider" style={{position:'fixed'}}>
+    <div className="Slider" style={{ position: "fixed" }}>
       <motion.ul
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}

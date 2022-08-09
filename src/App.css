@@ -4,9 +4,13 @@
     box-sizing: border-box;
     user-select: none;
 }
+html {
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+  }
 html,body{
     overflow-x: hidden;
-
+    
 }
 body{
     position: relative;
@@ -14,20 +18,21 @@ body{
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cookie&display=swap');
 .A_Home_Page{
-    background: url(../public/image/jpg-1.jpg) no-repeat ;
+    background: linear-gradient(to bottom right, #090b1b,#000000);
     background-size: cover;
     background-position: center;
     
    height: 100%;
 }
+
 .A_Home_Page_Main{
-  
+ 
     overflow: hidden;
     height: 100vh;
 }
 .bottom{
     width: 100%;
-    background-color: rgba(204, 181, 181, 0);
+    background: rgba(204, 181, 181, 0);
  position: absolute;
 
     
@@ -63,16 +68,22 @@ body{
     
 }
 .box_head h2{
-    color: #46dd9e;
+    color: #b223c5;
 }
 .box_head h1{
+    position: absolute;
+    color: #ffffff;
     font-size: 4rem;
     margin-top: 0.2rem;
+    z-index: 1;
     letter-spacing: 0.3rem;
     font-weight: 300;
   display: flex; 
-    color: #d8cfcf;
+
     font-family: 'Anton', sans-serif;
+    
+
+
     
 }
 
@@ -97,6 +108,12 @@ position: absolute;
  margin-left: -3rem;
  height: 5px;
 
+}
+.btn{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 7rem;
 }
 @media (max-width:800px) {
     .A_Home_Page{
@@ -134,7 +151,7 @@ position: absolute;
 
     }
     .bottom_icons{
-        
+        color: #ffffff;
     }
    .bottom_icons .i{
         font-size: 2.5rem;
@@ -174,5 +191,8 @@ position: absolute;
     }
     .A_Home_Page{
         background-position: left;
+    }
+    .bottom{
+        bottom: 3rem;
     }
 }

@@ -6,7 +6,7 @@ import {
   IoPlaySkipForwardCircle,
 } from "react-icons/io5";
 import { IoIosPlayCircle } from "react-icons/io";
-import {motion} from'framer-motion'
+import {motion} from 'framer-motion'
 import "./Style/ProjectMain/SliderMUI.css";
 import { Slider, Stack, Box } from "@mui/material";
 import { useRef } from 'react';

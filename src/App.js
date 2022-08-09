@@ -5,7 +5,7 @@ import Caller from "./Caller";
 import Home from "./Pages/Home";
 import Error from "./Pages/Error";
 import SideSlider from "./Components/Home/SideSlider";
-import LinearDeterminate from "./Pages/About/Style/Loader";
+import Contact from "./Pages/Contact/Contact";
 import {
   BrowserRouter as Router,
   Routes,
@@ -18,7 +18,7 @@ import Header from "./Components/Home/Header";
 import MusicPlayer from "./Pages/Projects/MusicPlayer";
 const LazyLoading3d = React.lazy(() => import("./Pages/About/About"));
 function App() {
-
+  
   return (
     <div className="App">
       <MusicPlayer />
@@ -39,6 +39,7 @@ function App() {
             }
           />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <SideSlider />

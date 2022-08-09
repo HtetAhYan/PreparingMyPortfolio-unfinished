@@ -1,0 +1,68 @@
+.ShowCase {
+  position: absolute;
+  top: 55rem;
+  width: 80vw;
+  padding: 0 2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+  border: solid 1px black;
+  left: 8rem;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  background: rgba(0, 0, 0, 0.103);
+}
+.ShowCase .ShowCaseItems {
+  width: 30vw;
+}
+
+.items1 {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+  padding: 0 2rem;
+  height: 5rem;
+  background-color: rgb(155, 155, 155);
+}
+.items1:hover {
+  box-sizing: 0 0 8px black;
+}
+
+.items2 {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+  padding: 0 2rem;
+  height: 5rem;
+  background-color: rgb(155, 155, 155);
+  margin-top: 11rem;
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .ShowCase {
+    transform: scale(0.6) translateX(-250px);
+    background: transparent;
+    display: block;
+    width: 45rem;
+    top: 35rem;
+    left: 0;
+    padding: 0;
+  }
+  .ShowCase .ShowCaseItems {
+    width: 100vw;
+  }
+  .items1 {
+    width: 35rem;
+  }
+  .items2 {
+    width: 35rem;
+    margin-top: 16rem;
+  }
+}/*# sourceMappingURL=ShowCase.css.map */

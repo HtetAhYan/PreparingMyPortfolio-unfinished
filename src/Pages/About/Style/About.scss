@@ -1,14 +1,15 @@
 .About{
-    
-    background: #0e1129 ;
+   
+    background: #0E1129;
     width: 100vw;
 
     background-size: cover;
     background-position: center;
-   
+  
     overflow: hidden;
-   height: 200vh;
+   height: 220vh;
    box-sizing: border-box;
+   scrollbar-width: 1px;
     .About_grid{
         
         display: flex;
@@ -31,6 +32,7 @@ transform: scale(0.9);
 }
 .About_texts{
     cursor: pointer;
+    z-index: 1;
     position: absolute;
     width: 35rem;
     top: 6rem;
@@ -75,7 +77,7 @@ backdrop-filter: blur(0.3rem);
 }
 @media screen and (max-width:768px) {
     .About_texts{
-        transform: scale(0.8) translateX(-100px);
+        transform: scale(0.7) translateX(-100px);
        
        right: 9rem;
     }
@@ -85,13 +87,13 @@ backdrop-filter: blur(0.3rem);
 }
 @media screen and (max-width:500px) {
     .About_texts{
-        transform: scale(0.9);
-        width: 20rem;
-       right: 0rem;
+       
+        width: 18rem;
+       right: 1rem;
        left: 0;
        
         h3{
-            line-height: 1rem;
+            line-height: 1.2rem;
             font-size: 0.9rem;
         }
         h1{
@@ -99,10 +101,12 @@ backdrop-filter: blur(0.3rem);
         }
 
     }
+    
     .About_spline{
-        transform: scale(0.6);
-         left: -9rem;
-        
-        bottom: 5rem;
+      top: 14rem;
+      right: -7rem;
+      transform: scale(0.6) ;
+      
+      
     }
 }

@@ -1,0 +1,12 @@
+.Mimi {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0.3;
+}
+
+@media screen and (max-width: 500px) {
+  .Mimi {
+    transform: scale(0.6) translateX(650px) translateY(100px);
+  }
+}/*# sourceMappingURL=Mimi.css.map */

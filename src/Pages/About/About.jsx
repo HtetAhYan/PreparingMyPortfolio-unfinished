@@ -4,25 +4,36 @@ import './Style/About.css'
 import { motion } from 'framer-motion';
 import Header from '../../Components/Home/Header';
 import { Button } from '@mui/material';
-import LinearDeterminate from './Style/Loader';
+
 import SplineRender from './Spline';
+import ShowCase from './ShowCase';
+import Linear from './Loader';
 export default function About() {
-  const [load,setLoad] = useState(true)
-    
+  
+    const [animate,setAnimate]=useState(true)
+    const [load,setLoad] = useState(true)
 useEffect(() => {
  if(load){
   setTimeout(() => {
     setLoad(false)
-  }, 2000);
+  }, 4000);
  }
-})
-  return (
-   
-    <div className='About'>
+},[])
+useEffect(() => {
+  if(animate){
+   setTimeout(() => {
+     setAnimate(false)
+   }, 2000);
+  }
+ },[])
+  return (<div>
+     {load ? <Linear/> :
+        <>
+    <div className='About' >
     
       <Header/>
-      {load ? <LinearDeterminate/> :
-      <><div className='About_grid'>
+    
+   <div className='About_grid'>
            
             <motion.div
               animate={{ opacity: 1 }}
@@ -58,10 +69,15 @@ useEffect(() => {
               bottom: 200
             }}
             style={{ position: 'absolute', top: '10rem', left: '5rem' }}>
-              <Button size='large' variant='contained' color='success' sx={{ fontWeight: '400' ,borderRadius:'0.7rem'}}>Contact Me!</Button>
-            </motion.div></>}
-    
-    </div>
+              <Button size='large' variant='contained' color='secondary' sx={{ zIndex:'3',fontWeight: '400' ,borderRadius:'0.6rem'}}>Contact Me!</Button>
+            
+            </motion.div>
+         
+            
+         {!animate &&  <ShowCase/>}
+           
 
+    </div></>}
+    </div>
   );
 }

@@ -1,7 +1,7 @@
 .TxtH{
-    position: relative;
-    top: 2rem;
-    left: 0;
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
     p{
         color: #ffffff;
         line-height: 2rem;
@@ -11,7 +11,8 @@
 }
 @media (max-width:600px) {
     .TxtH{
-        top: 2rem;
+        top: 5rem;
+        left: 1.5rem;
         p{
             font-size: 0.9rem;
             letter-spacing: -1px;

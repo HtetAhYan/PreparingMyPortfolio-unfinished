@@ -1,22 +1,31 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Header from './Components/Home/Header'
 import { motion, MotionConfig } from 'framer-motion'
 import SideSlider from './Components/Home/SideSlider'
 import TxtHome from './Components/Home/TxtHome'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import {Stack,Button} from '@mui/material'
+import Mimi from './Pages/ThreeDelements/Mimi'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import './App.css'
 import Behance from './Assets/Images/behance.svg'
 import Caller from './Caller'
+import Linear from './Pages/About/Loader'
 import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
 import MusicPlayer from './Pages/Projects/MusicPlayer'
 import MusicThreeD from './Pages/ThreeDelements/MusicThreeD'
 function FixedHome() {
-
+  const [load,setLoad] = useState(true)
+  useEffect(() => {
+   if(load){
+    setTimeout(() => {
+      setLoad(false)
+    }, 4000);
+   }
+  },[])
   return (
     <div className='A_Home_Page_Main'>
-     
+       {load ? <Linear/> :
       <div className='A_Home_Page'>
         <Header/>
 
@@ -35,10 +44,10 @@ function FixedHome() {
               <motion.h1 animate={{ x: 0, scale: 1, opacity: 1 }} initial={{ x: -200, opacity: 0 }}
                  drag
                  dragConstraints={{
-                   top: -100,
+                   top: -10,
                    left: -10,
-                   right: 100,
-                   bottom: 100
+                   right: 20,
+                   bottom: 2
                  }}
                 transition={{ type: 'tween', duration: 0.5, delay: 0.3 }}  >I'm Htet Ah Yan</motion.h1>
                    <TxtHome />
@@ -69,9 +78,9 @@ function FixedHome() {
           </Stack>
            
         </Stack>
-        
+       <Mimi/>
       </div>
-     
+}
     </div>
   )
 }
