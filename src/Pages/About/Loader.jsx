@@ -6,6 +6,7 @@ export default function Linear() {
   return (
  <div style={{background:'#0e1129',height:'100vh',width:'100vw'}}>
     <LinearProgress color='secondary' />
+    
  </div>
   );
 }

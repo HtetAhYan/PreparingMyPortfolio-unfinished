@@ -10,7 +10,7 @@ function SideSlider() {
     { id: 1, text: "Home" },
     { id: 2, text: "Projects" },
     { id: 3, text: "About" },
-    { id: 4, text: "Blog" },
+    { id: 4, text: "Explore" },
     { id: 5, text: "Contact" },
   ];
   let Nav = useNavigate();

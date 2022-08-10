@@ -1,5 +1,49 @@
 .Contact{
-    background: linear-gradient(to bottom right, #090b1b,#000000);
+    background-image: linear-gradient(to right bottom, #0e1129, #131734, #1a1c3e, #222149, #2a2654, #2d2753, #302752, #322851, #2e2545, #2a2339, #25202e, #201e23);
+  
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100vw;
+    h1{
+     
+        color:transparent;
+        transition: ease-in-out 0.2s ;
+        font-size: 3rem;
+        -webkit-text-stroke: 1px white;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .form{
+        backdrop-filter: blur(1rem);
+        box-shadow: 0 0 8px 3px black;
+        overflow: hidden;
+        background-color: #00000020;
+        width: 20rem;
+       
+        border-radius: 0.8rem;
+        padding: 1.5rem 2rem;
+        transform: scale(1.3);
+        display: flex;
+        flex-direction: column;
+        label{
+            color: beige;
+        }
+        input{
+            margin-bottom: 1rem;
+           background-color: #c3c3c3;
+           &:focus{
+            outline: rgb(100, 255, 4);
+           }
+        }
+      
+
+    }
+}
+.Contact .sentBtn{
+    margin-top: 3rem;
+   
 }
