@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  height: 220vh;
+  height: 250vh;
   box-sizing: border-box;
   scrollbar-width: 1px;
 }
@@ -69,6 +69,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .About {
+    height: 170vh;
+  }
   .About_texts {
     width: 18rem;
     right: 1rem;
@@ -82,7 +85,7 @@
     font-size: 1rem;
   }
   .About_spline {
-    top: 14rem;
+    top: 19rem;
     right: -7rem;
     transform: scale(0.6);
   }

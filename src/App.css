@@ -18,7 +18,7 @@ body{
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cookie&display=swap');
 .A_Home_Page{
-    background: linear-gradient(to bottom right, #090b1b,#000000);
+     background-image: linear-gradient(to left bottom, #000000, #020202, #040404, #060606, #080808, #080808, #090909, #090909, #070707, #060606, #040404, #020202);;
     background-size: cover;
     background-position: center;
     

@@ -13,7 +13,7 @@ import {
   useRoutes,
 } from "react-router-dom";
 import Projects from "./Pages/Projects/Projects";
-
+import Explore from "./Pages/Explore/Explore";
 import Header from "./Components/Home/Header";
 import MusicPlayer from "./Pages/Projects/MusicPlayer";
 const LazyLoading3d = React.lazy(() => import("./Pages/About/About"));
@@ -21,9 +21,10 @@ function App() {
   
   return (
     <div className="App">
-      <MusicPlayer />
+   
 
       <Router>
+      <Header/>
         <Routes>
           {["/home", "/"].map((path, index) => (
             <Route path={path} element={<FixedHome />} key={index} />
@@ -41,9 +42,13 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
-        </Routes>
+          <Route path="/explore" element={<Explore />} />
+          </Routes>
+      
+        <MusicPlayer />
         <SideSlider />
       </Router>
+  
     </div>
   );
 }

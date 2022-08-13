@@ -42,4 +42,10 @@
 
 .Contact .sentBtn {
   margin-top: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    transform: scale(0.7);
+  }
 }/*# sourceMappingURL=Contact.css.map */

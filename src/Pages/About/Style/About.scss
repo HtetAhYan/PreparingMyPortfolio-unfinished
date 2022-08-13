@@ -7,7 +7,7 @@
     background-position: center;
   
     overflow: hidden;
-   height: 220vh;
+   height: 250vh;
    box-sizing: border-box;
    scrollbar-width: 1px;
     .About_grid{
@@ -86,6 +86,10 @@ backdrop-filter: blur(0.3rem);
     }
 }
 @media screen and (max-width:500px) {
+    .About{
+
+        height: 170vh;
+    }
     .About_texts{
        
         width: 18rem;
@@ -103,7 +107,7 @@ backdrop-filter: blur(0.3rem);
     }
     
     .About_spline{
-      top: 14rem;
+      top: 19rem;
       right: -7rem;
       transform: scale(0.6) ;
       

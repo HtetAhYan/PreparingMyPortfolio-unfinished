@@ -31,15 +31,16 @@ function Contact() {
 
         
        
-      emailjs.sendForm('Jeremy_', 'JeremyPortfolio', form.current, '0Vide87CskT8zVici')
+      
+        if(message.length >=50){
+          setLoad(true)
+          setValue(true)
+          emailjs.sendForm('Jeremy_kun', 'JeremyPortfolio', form.current, '0Vide87CskT8zVici')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
         });
-        if(message.length >=50){
-          setLoad(true)
-          setValue(true)
           
         }else{
         alert("Please write at least 50 letters")

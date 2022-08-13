@@ -47,11 +47,12 @@
 
 @media screen and (max-width: 500px) {
   .ShowCase {
-    transform: scale(0.6) translateX(-250px);
+    transform: scale(0.5) translateX(-230px);
     background: transparent;
     display: block;
     width: 45rem;
     top: 35rem;
+    border: none;
     left: 0;
     padding: 0;
   }
